@@ -1,0 +1,9 @@
+<div class="item-todo">
+    <div class="check {{ todo.completed ? 'checked' : '' }}" (click)="itemCheck()">
+        <img src="{{ rutaCheck }}" alt="">
+    </div>
+    <p class="{{todo.completed ? 'completed' : ''}}">{{ todo.task }}</p>
+    <span class="material-symbols-outlined" (click)="removeTodo(todo.uid)">
+        close
+    </span>
+</div>

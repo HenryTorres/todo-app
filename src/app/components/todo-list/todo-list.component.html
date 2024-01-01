@@ -1,0 +1,28 @@
+<div class="my-input">
+    <span class="material-symbols-outlined circle">
+        circle
+    </span>
+    <input #inputTask class="inputTodo" type="text" placeholder="Create a new todo..."
+        (keydown.enter)="addItemTodo(inputTask.value)">
+    <span class="material-symbols-outlined add" (click)="addItemTodo(inputTask.value)">
+        add
+    </span>
+</div>
+
+<div class="my-list" cdkDropList (cdkDropListDropped)="drop($event)">
+    @for (todo of filteredTodos; track $index) {
+    <todo-item [todo]="todo" cdkDrag (onRemoveTodo)="onRemoveTodo($event)" />
+    }
+
+    @if (this.todos.length>0) {
+    <div class="footer-list">
+        <span> {{filteredTodos.length}} items left</span>
+        <div class="filter">
+            <a class="{{ selAll ? 'active' : '' }}" (click)="viewAll($event)">All</a>
+            <a class="{{ selActive ? 'active' : '' }}" (click)="viewActive($event)">Active</a>
+            <a class="{{ selCompleted ? 'active' : '' }}" (click)="viewCompleted($event)">Completed</a>
+        </div>
+        <a (click)="clearCompleted($event)">Clear Completed</a>
+    </div>
+    }
+</div>

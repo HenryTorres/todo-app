@@ -1,0 +1,54 @@
+.item-todo {
+    border-bottom: 1px solid var(--linecolor);
+    padding: 1.3rem;
+    border-radius: 1px;
+    background-color: var(--background);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-todo .check {
+    border: 1px solid var(--linecolor);
+    border-radius: 50%;
+    border-width: 2px;
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-todo .check:hover {
+    /* background: linear-gradient(to left, var(--check-background-start), var(--check-background-end)); */
+    border-color: var(--check-background-start);
+    cursor: pointer;
+}
+
+.item-todo .checked {
+    background: linear-gradient(to left, var(--check-background-start), var(--check-background-end));
+    border-color: var(--check-background-start);
+}
+
+.item-todo p {
+    flex-grow: 1;
+    font-size: .8em;
+    color: var(--labels);
+}
+
+.item-todo p.completed {
+    color: var(--textcompleted) !important;
+    text-decoration: line-through;
+}
+
+.item-todo span {
+    visibility: hidden;
+    color: var(--labels);
+}
+
+.item-todo:hover span {
+    visibility: visible;
+    cursor: pointer;
+}

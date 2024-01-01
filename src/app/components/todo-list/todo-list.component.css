@@ -1,0 +1,86 @@
+.my-input {
+    width: 100%;
+    padding: 1.25rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    background: var(--background);
+
+    display: flex;
+    gap: 10px;
+}
+
+.my-input .circle {
+    color: var(--linecolor);
+}
+
+.inputTodo {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: var(--labels);
+    background: var(--background);
+}
+
+.my-input .add {
+    color: var(--bright-blue);
+    font-size: 1.2em;
+}
+
+.my-input .add:hover {
+    cursor: pointer;
+}
+
+.my-list {
+    border-radius: 5px;
+    overflow: hidden;
+    /* box-shadow: 0 10px 10px -10px var(--shadow); */
+}
+
+.my-list .footer-list {
+    padding: .8rem 1.5rem;
+    font-size: .8em;
+    background-color: var(--background);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-list .footer-list span {
+    color: var(--labels);
+}
+
+.my-list .footer-list a {
+    text-decoration: none;
+    color: var(--labels);
+}
+
+.my-list .footer-list a:hover {
+    color: var(--bright-blue);
+    cursor: pointer;
+}
+
+.my-list .footer-list a.active {
+    color: var(--bright-blue);
+}
+
+.my-list .footer-list .filter {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 860px) {
+    .my-list .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .my-list .footer-list .filter {
+        /* flex-direction: column;
+        align-items: center; */
+        gap: 5px;
+    }
+}
