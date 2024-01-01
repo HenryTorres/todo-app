@@ -1,6 +1,5 @@
 .container {
     position: relative;
-    /* max-width: 1440px; */
 }
 
 .container header {
@@ -24,4 +23,13 @@
     z-index: 2;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }

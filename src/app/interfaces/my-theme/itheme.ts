@@ -6,6 +6,7 @@ export interface IThemeProperties {
     linecolor: string;
     urlbackgroundimage: string;
     textcompleted: string;
+    textfilters: string;
 }
 
 export interface ITheme {

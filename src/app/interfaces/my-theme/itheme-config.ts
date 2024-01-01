@@ -8,7 +8,8 @@ export const THEMES: ITheme = {
         labelstitle: 'hsl(0, 0%, 98%)',
         linecolor: 'hsl(234, 39%, 85%)',
         urlbackgroundimage: 'url(assets/images/bg-desktop-light.jpg)',
-        textcompleted: 'hsl(240, 2%, 84%)'
+        textcompleted: 'hsl(240, 2%, 84%)',
+        textfilters: 'hsl(249, 3%, 58%)'
     },
     dark: {
         backgroundend: 'hsl(240, 20%, 12%)',
@@ -17,6 +18,7 @@ export const THEMES: ITheme = {
         labelstitle: 'hsl(0, 0%, 98%)',
         linecolor: 'hsl(235, 17%, 26%)',
         urlbackgroundimage: 'url(assets/images/bg-desktop-dark.jpg)',
-        textcompleted: 'hsl(235, 13%, 35%)'
+        textcompleted: 'hsl(235, 13%, 35%)',
+        textfilters: 'hsl(238, 14%, 43%)'
     }
 }

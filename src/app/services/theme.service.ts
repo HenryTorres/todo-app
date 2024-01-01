@@ -13,7 +13,7 @@ export class ThemeService {
   ) { }
 
   getThemeLocalStorage(): string {
-    return localStorage.getItem('myTheme') || TypeTheme.light;
+    return localStorage.getItem('myTheme') || TypeTheme.dark;
   }
 
   setThemeLocalStorage(value: string) {
